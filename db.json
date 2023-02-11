@@ -1,0 +1,30 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "url": "https://user-images.githubusercontent.com/99812352/165297430-387a0c48-3c6d-4593-b393-9e833eb42c69.PNG",
+      "title": "A simple Medium Clone app",
+      "writeUp": "  This is my first official app, a medium clone . i put all the major skills o had learnt at the time into practice to create a dummy replica of the original medium app"
+    },
+    {
+      "id": 2,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRN8BHebyZmwfM68R9y4xWVWJxpXiqlJts0w&usqp=CAU",
+      "title": "A Ecommerce Website",
+      "writeUp": "  This is an ecommerce website i developed for a brand in nigeria , A convinient way of buying and selling"
+    },
+
+    {
+      "id": 3,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2UBz-_ys-pGkIEhB_vE9P1tqNJ1nR6X54SQ&usqp=CAU",
+      "title": "A weather tracking website .",
+      "writeUp": " The Weather website which provides a national and local weather forecast for cities, as well as weather radar, report and hurricane coverage."
+    },
+
+    {
+      "id": 4,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaqn1-Ufrcyjm3MgzjsEt7OoELOR3TEFc-Cg&usqp=CAU",
+      "title": "An Uber Cloone website ",
+      "writeUp": " Uses api to keep track of ddirections using google maps. uber clone put my knowledge to test and it was a wonderful experience buiding it up."
+    }
+  ]
+}
