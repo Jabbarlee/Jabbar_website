@@ -11,9 +11,7 @@ import {
   ArrowRightCircleIcon,
 } from "@heroicons/react/24/solid";
 
-type Props = {};
-
-export default function Projects2({}: Props) {
+export default function Projects2() {
   const { stopCurrentIndex, setStopCurrentIndex } = useContext(mobileContext);
   const { project, setProject } = useContext(mobileContext);
   var { currentIndex, setCurrentIndex } = useContext(mobileContext);

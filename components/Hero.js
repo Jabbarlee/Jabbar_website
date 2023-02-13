@@ -5,9 +5,8 @@ import { motion, useDragControls } from "framer-motion";
 import BackgroundCircles from "./BackgroundCircles";
 
 import Image from "next/image";
-type Props = {};
 
-export default function Hero({}: Props) {
+export default function Hero() {
   const [text, count] = useTypewriter({
     words: [
       "Hi ,i'm ABDUL JABBAR",

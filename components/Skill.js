@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-export default function Skill({ skill }: Props) {
+export default function Skill({ skill }) {
   const [skillMotion, setSkillMotion] = useState(1);
 
   useEffect(() => {

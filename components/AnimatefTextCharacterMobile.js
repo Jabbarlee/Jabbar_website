@@ -1,23 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-type Props = {
-  text: string;
-
-  text2: string;
-  text3: string;
-};
-
-const AnimatedTextCharacter = ({ text, text2, text3 }: Props) => {
+const AnimatedTextCharacterMobile = ({ text, text2, text3, text4 }) => {
   const letters = Array.from(text);
   const letters2 = Array.from(text2);
   const letters3 = Array.from(text3);
+  const letters4 = Array.from(text4);
 
   const container = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
-      transition: { staggerChildren: 0.03, delayChildren: 0.04 * i },
+      transition: { staggerChildren: 0.03, delayChildren: 0.03 * i },
     }),
   };
 
@@ -87,8 +81,22 @@ const AnimatedTextCharacter = ({ text, text2, text3 }: Props) => {
           </motion.p>
         ))}
       </motion.div>
+
+      <motion.div
+        style={{ overflow: "hidden", display: "flex" }}
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+      >
+        {letters4.map((letter4, index) => (
+          <motion.p className="text-base" variants={child} key={index}>
+            {letter4 === " " ? "\u00A0" : letter4}
+            <br />
+          </motion.p>
+        ))}
+      </motion.div>
     </div>
   );
 };
 
-export default AnimatedTextCharacter;
+export default AnimatedTextCharacterMobile;

@@ -2,27 +2,9 @@ import React from "react";
 import { useState, createContext, useRef, useMemo, useEffect } from "react";
 import { getDoc, doc } from "firebase/firestore";
 import { db } from "./firebase";
-const mobileContext = createContext<mobileContexttype | null>(null);
+const mobileContext = createContext();
 
-type mobileContextProps = {
-  children: React.ReactNode;
-};
-type mobileContexttype = {
-  hidden: boolean;
-  showAboutImage: boolean;
-
-  isVisible: React.Dispatch<React.SetStateAction<boolean>>;
-
-  setIsVisible: React.Dispatch<React.SetStateAction<boolean>>;
-
-  showing: React.Dispatch<React.SetStateAction<boolean>>;
-
-  setShowing: React.Dispatch<React.SetStateAction<boolean>>;
-
-  setProjects: React.Dispatch<React.SetStateAction<boolean>>;
-};
-
-const MobileContextProvider = ({ children }: mobileContextProps) => {
+const MobileContextProvider = ({ children }) => {
   const [myImages, setMyImages] = useState();
 
   useEffect(() => {

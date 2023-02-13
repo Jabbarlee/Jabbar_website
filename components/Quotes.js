@@ -5,9 +5,8 @@ import { collection, getDocs, getDoc, doc } from "firebase/firestore";
 
 import { db } from "../firebase";
 import { useState, useEffect } from "react";
-type Props = {};
 
-export default function Quotes({}: Props) {
+export default function Quotes() {
   const [quoteIndex, setQuoteindex] = useState(3);
   const [quotes, setQuotes] = useState([]);
 

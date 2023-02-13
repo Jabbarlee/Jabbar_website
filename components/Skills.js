@@ -7,9 +7,7 @@ import { useEffect, useState } from "react";
 import { collection, getDocs, getDoc, doc } from "firebase/firestore";
 import { db } from "../firebase";
 
-type Props = {};
-
-export default function Skills({}: Props) {
+export default function Skills({}) {
   useEffect(() => {
     const getSkills = async () => {
       const querySnapshot = await getDocs(collection(db, "Skills"));

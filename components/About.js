@@ -7,9 +7,7 @@ import AnimatedTextCharacterMobile from "./AnimatefTextCharacterMobile";
 
 import { useEffect } from "react";
 
-type Props = {};
-
-export default function About({}: Props) {
+export default function About() {
   const {
     isVisible,
     setIsVisible,
