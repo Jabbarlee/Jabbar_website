@@ -84,10 +84,10 @@ export default function ContactMe() {
   };
   return (
     <div
-      className={`h-screen ${ContactTheme}  bg-white flex relative flex-col text-center md:text-left md:flex-row w-screen px-10 justify-evenly mx-auto items-center z-0 `}
+      className={`h-screen ${ContactTheme}  bg-white flex relative text-center md:text-left md:flex-row w-screen px-10 justify-evenly mx-auto items-center z-0 `}
     >
       <ToastContainer
-        className="absoute md:mt-10 mt-6 mr-20 md:mr-16 "
+        className="absoute md:mt-10 mt-20 mr-20 md:mr-16 2xl:mt-[150px] "
         position="top-right"
         autoClose={2000}
         hideProgressBar={false}
@@ -100,17 +100,17 @@ export default function ContactMe() {
         theme="dark"
       />
 
-      <div className=" dark:bg-blue-300 bg-blue-900 bg-opacity-10 md:w-[1150px] w-[400px] h-[500px] dark:bg-opacity-10 md:h-[500px] md:mt-24 mt-16 backdrop-filter backdrop-blur-sm border  border-r-0 border-t-0 z-30  ">
+      <div className=" dark:bg-blue-300 min-[460px]:w-[500px] min-[680px]:w-[600px] bg-blue-900 bg-opacity-10 md:w-[1150px] w-[300px] h-[500px] dark:bg-opacity-10 md:h-[500px] md:mt-24 2xl:w-[1500px] 2xl:h-[600px]  backdrop-filter backdrop-blur-sm border  border-r-0 border-t-0 z-30  ">
         <form
-          className="flex flex-col justify-evenly items-center h-full  "
+          className="flex flex-col justify-evenly items-center h-full   "
           ref={form}
           onSubmit={sendEmail}
         >
-          <div className="text-blue-500 shadow-black shadow-lg  text-1xl tracking-[20px] border-0 font-serif">
+          <div className="text-blue-500 shadow-black shadow-lg  text-1xl tracking-[20px] 2xl:tracking-[30px] 2xl:text-2xl border-0 font-serif">
             CONTACT ME
           </div>
           <input
-            className="md:w-[500px] w-[350px] text-center dark:text-white bg-transparent border-r-0 border-t-0 border-l-0 dark:border-white dark:border-opacity-50   tracking-widest focus:bg-transparent"
+            className="lg:w-[500px] w-[300px] text-center dark:text-white bg-transparent border-r-0 border-t-0 border-l-0 dark:border-white dark:border-opacity-50 2xl:text-xl   tracking-widest focus:bg-transparent"
             type="text"
             name="user_name"
             value={username}
@@ -123,7 +123,7 @@ export default function ContactMe() {
             placeholder="Enter Your Email addeess"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="md:w-[500px] w-[350px] text-center dark:text-white bg-transparent border-r-0 border-t-0 border-l-0 darK:border-white dark:border-opacity-50   tracking-widest focus:outline-none focus:outline-transparent"
+            className="lg:w-[500px] w-[300px] text-center 2xl:text-xl dark:text-white bg-transparent border-r-0 border-t-0 border-l-0 darK:border-white dark:border-opacity-50   tracking-widest focus:outline-none focus:outline-transparent"
           ></input>
 
           <textarea
@@ -131,36 +131,35 @@ export default function ContactMe() {
             name="message"
             value={textarea}
             onChange={(e) => setTextarea(e.target.value)}
-            className="focus:text-start md:w-[500px] w-[350px] text-center dark:text-white text-black bg-transparent border-r-0 border-t-0 border-l-0 dark:border-white dark:border-opacity-50   tracking-widest focus:outline-none focus:outline-transparent"
+            className="focus:text-start lg:w-[500px] w-[300px] 2xl:text-xl text-center dark:text-white text-black bg-transparent border-r-0 border-t-0 border-l-0 dark:border-white dark:border-opacity-50   tracking-widest focus:outline-none focus:outline-transparent"
           ></textarea>
           <div className="md:flex md:justify-between flex flex-col justify-center items-center dark:text-white md:w-[500px]  w-[350px] dark:text-opacity-50 ">
             <div className="flex ">
-              <PhoneIcon className="w-4 mr-1 h-4 rounded-full dark:text-white" />
-              <h1>+2347066986305</h1>
+              <PhoneIcon className="w-4  2xl:text-2xl mr-1 h-4 rounded-full dark:text-white" />
+              <h1 className="2xl:text-xl">+2347066986305</h1>
             </div>
             <div className="flex ">
-              <EnvelopeIcon className="w-4 mr-1 h-4 rounded-full dark:text-white" />
-              <h1>momohabduljabbar@gmail.com</h1>
+              <EnvelopeIcon className="w-4 mr-1 2xl:text-2xl h-42xl:text-xl rounded-full dark:text-white" />
+              <h1 className="2xl:text-xl">momohabduljabbar@gmail.com</h1>
             </div>
           </div>
           <motion.input
             variants={buttonVariants}
             whileHover="hover"
             type="Submit"
-            value="Send"
-            className=" text-center text-blue-500 tracking-widest font-serif "
+            value="Send "
+            className=" text-center 2xl:text-2xl  text-blue-500 tracking-widest font-serif "
           ></motion.input>
         </form>
       </div>
 
       <motion.div
-        className="absolute z-0  md:top-96 top-[500px] -left-20  "
-        initial={{ y: -700, scale: 0.1 }}
+        className="absolute z-0  lg:top-96 2xl:top-[500px] top-[400px] min-[460px]:top-[500px] min-[680px]:w-[600px]  -left-10 "
+        initial={{ y: -400, scale: 0.1 }}
         whileInView={{ y: 0, scale: 1 }}
         transition={{ delay: 0.5, duration: 2 }}
-        drag
       >
-        <div className=" relative w-[15rem] h-[10rem] md:w-[20rem] md:h-[20rem] overflow-hidden ">
+        <div className=" relative w-[10rem] h-[10rem]  lg:w-[20rem] lg:h-[20rem]  overflow-hidden ">
           <Image
             className=" absolute w-full h-full object-cover"
             src="https://res.cloudinary.com/demo/image/fetch/https://thumbs.gfycat.com/GenuineOddballCleanerwrasse-max-1mb.gif"

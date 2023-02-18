@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const AnimatedTextCharacterMobile = ({ text, text2 }) => {
+const AnimatedTextCharacterIpad = ({ text, text2 }) => {
   const letters = Array.from(text);
   const letters2 = Array.from(text2);
 
@@ -9,7 +9,7 @@ const AnimatedTextCharacterMobile = ({ text, text2 }) => {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
-      transition: { staggerChildren: 0.03, delayChildren: 0.03 * i },
+      transition: { staggerChildren: 0.03, delayChildren: 0.04 * i },
     }),
   };
 
@@ -45,7 +45,11 @@ const AnimatedTextCharacterMobile = ({ text, text2 }) => {
         whileInView="visible"
       >
         {letters.map((letter, index) => (
-          <motion.p className="text-base" variants={child} key={index}>
+          <motion.p
+            className="text-base  2xl:text-2xl "
+            variants={child}
+            key={index}
+          >
             {letter === " " ? "\u00A0" : letter}
             <br />
           </motion.p>
@@ -59,7 +63,11 @@ const AnimatedTextCharacterMobile = ({ text, text2 }) => {
         whileInView="visible"
       >
         {letters2.map((letter2, index) => (
-          <motion.p className="text-base" variants={child} key={index}>
+          <motion.p
+            className="text-base 2xl:text-2xl"
+            variants={child}
+            key={index}
+          >
             {letter2 === " " ? "\u00A0" : letter2}
             <br />
           </motion.p>
@@ -69,4 +77,4 @@ const AnimatedTextCharacterMobile = ({ text, text2 }) => {
   );
 };
 
-export default AnimatedTextCharacterMobile;
+export default AnimatedTextCharacterIpad;

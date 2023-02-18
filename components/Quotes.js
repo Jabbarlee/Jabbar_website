@@ -39,12 +39,12 @@ export default function Quotes() {
 
   return (
     <div className="flex flex-row relative h-screen  justify-center  w-screen">
-      <div className="absolute font-GoblineOne md:top-20 top-16 uppercase tracking-[20px] text-blue-500 text-2xl  ">
+      <div className="absolute 2xl:top-[150px] 2xl:tracking-[30px] 2xl:text-4xl font-GoblineOne lg:top-20 top-16 uppercase tracking-[20px] text-blue-500 lg;text-2xl text-2xl  ">
         Quotes
       </div>
 
-      <div className="absolute top-40 md:max-w-4xl max-w-md  flex flex-col space-y-4">
-        <div className="w-full flex md:justify-end justify-center ">
+      <div className="absolute top-40 lg:max-w-4xl md:max-w-md max-w-[350px]  2xl:max-w-[1400px]  flex flex-col space-y-8 2xl:space-y-16">
+        <div className="w-full flex lg:justify-end 2xl:justify-end justify-center ">
           <motion.div
             initial={{ x: 200 }}
             whileInView={{ x: 0 }}
@@ -52,9 +52,10 @@ export default function Quotes() {
           >
             <Image
               src={`https://res.cloudinary.com/demo/image/fetch/${quote?.quoteImage}`}
-              width={200}
-              height={200}
+              width={100}
+              height={100}
               alt=""
+              className="h-[250px] w-[300px] lg:h-[200px] lg:w-[200px]  2xl:w-[400px] 2xl:h-[400px]   2xl:pt-8 "
             />
           </motion.div>
         </div>
@@ -63,7 +64,7 @@ export default function Quotes() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 2, delay: 2 }}
-          className="dark:text-white text-black font-PlayFair md:text-2xl text-center"
+          className="dark:text-white text-black font-PlayFair lg:text-2xl 2xl:text-4xl text-center"
         >
           {quote?.writeUp}
         </motion.p>
@@ -72,7 +73,7 @@ export default function Quotes() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 2, delay: 3 }}
-            className="dark:text-white text-black font-GreatVibes"
+            className="dark:text-white text-black font-GreatVibes lg:text-xl 2xl:text-2xl"
           >
             {`~ ${quote?.authorName}`}
           </motion.h1>

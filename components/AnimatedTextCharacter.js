@@ -1,10 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const AnimatedTextCharacter = ({ text, text2, text3 }) => {
+const AnimatedTextCharacter = ({ text, text2 }) => {
   const letters = Array.from(text);
   const letters2 = Array.from(text2);
-  const letters3 = Array.from(text3);
 
   const container = {
     hidden: { opacity: 0 },
@@ -46,7 +45,11 @@ const AnimatedTextCharacter = ({ text, text2, text3 }) => {
         whileInView="visible"
       >
         {letters.map((letter, index) => (
-          <motion.p className="text-base" variants={child} key={index}>
+          <motion.p
+            className="text-base text-justify"
+            variants={child}
+            key={index}
+          >
             {letter === " " ? "\u00A0" : letter}
             <br />
           </motion.p>
@@ -60,22 +63,12 @@ const AnimatedTextCharacter = ({ text, text2, text3 }) => {
         whileInView="visible"
       >
         {letters2.map((letter2, index) => (
-          <motion.p className="text-base" variants={child} key={index}>
+          <motion.p
+            className="text-base text-justify"
+            variants={child}
+            key={index}
+          >
             {letter2 === " " ? "\u00A0" : letter2}
-            <br />
-          </motion.p>
-        ))}
-      </motion.div>
-
-      <motion.div
-        style={{ overflow: "hidden", display: "flex" }}
-        variants={container}
-        initial="hidden"
-        whileInView="visible"
-      >
-        {letters3.map((letter3, index) => (
-          <motion.p className="text-base" variants={child} key={index}>
-            {letter3 === " " ? "\u00A0" : letter3}
             <br />
           </motion.p>
         ))}

@@ -107,57 +107,9 @@ export default function Header() {
       }}
       animate={{ x: 0, opacity: 1, scale: 1 }}
       transition={{ duration: 2, delay: 2 }}
-      className={`sticky top-0  ${mobileClickTriggers}   flex md:flex-row items-center justify-between  md:w-auto md:max-w-7xl mx-auto z-20  xl:items-center  md:h-14   h-10  `}
+      className={`sticky top-0  ${mobileClickTriggers}   flex md:flex-row items-center justify-between   max-w-8xl mx-auto z-20  xl:items-center  md:h-14 2xl:h-20   h-10  `}
     >
       {/* Social icons */}
-
-      {hidden ? (
-        <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 6 }}
-          className="md:hidden ml-4 social z-30"
-        >
-          <button onClick={() => setHidden(!hidden)}>Social icons</button>
-        </motion.div>
-      ) : (
-        <div className="space-x-0 md:hidden">
-          <span>
-            <SocialIcon
-              url="https://www.youtube.com/@momohabduljabbar8469"
-              fgColor="blue"
-              bgColor="transparent"
-              style={{ height: 45, width: 45 }}
-            />
-          </span>
-
-          <span>
-            <SocialIcon
-              url="https://twitter.com/NIGERIAN_KING2?s=09"
-              fgColor="blue"
-              bgColor="transparent"
-              style={{ height: 45, width: 45 }}
-            />
-          </span>
-          <span>
-            <SocialIcon
-              url="https://www.linkedin.com/in/momoh-abdul-jabbar-183260161"
-              fgColor="blue"
-              bgColor="transparent"
-              style={{ height: 45, width: 45 }}
-            />
-          </span>
-
-          <span>
-            <SocialIcon
-              url="https://github.com/jabbarlee"
-              fgColor="blue"
-              bgColor="transparent"
-              style={{ height: 45, width: 45 }}
-            />
-          </span>
-        </div>
-      )}
 
       <motion.div
         className=" hidden md:block "
@@ -201,7 +153,7 @@ export default function Header() {
         </a>
       </motion.div>
 
-      <div className="md:flex md:block hidden  md:flex-row md:items-center  cursor-pointer ">
+      <div className="md:flex md:block hidden  md:flex-row md:items-center  cursor-pointer mr-6 ">
         {renderThemeChanger()}
 
         <motion.p
@@ -213,7 +165,7 @@ export default function Header() {
         </motion.p>
       </div>
 
-      <div className="flex md:hidden  flex-row items-center  cursor-pointer mr-11  ">
+      <div className="flex md:hidden  flex-row items-center  cursor-pointer ml-4  ">
         {renderThemeChanger()}
       </div>
 
@@ -244,70 +196,108 @@ export default function Header() {
         <div
           className={`abolute ${translateItem} flex flex-col justify-between w-48 h-96 transition duration-700 border-t-0 border-l-0 dark:bg-black bg-gray-400 font-GoblineOne border border-white opacity-80 -right-100`}
         >
-          <nav className="self-center ">
-            <ul className="flex flex-col pt-5 space-y-2  ">
-              <a href="#hero">
-                <li
-                  className="my-2 mr-8 dark:text-white cursor-pointer"
-                  onClick={() => setMemuOption(false)}
-                >
-                  Portfolio
-                </li>
-              </a>
-              <a href="#about">
-                <li
-                  className="my-2 mr-8 dark:text-white cursor-pointer"
-                  onClick={() => setMemuOption(false)}
-                >
-                  About
-                </li>
-              </a>
+          <div className="flex">
+            <nav className="self-center ">
+              <ul className="flex flex-col pt-5 space-y-2 ml-2 font-extrabold  ">
+                <a href="#hero">
+                  <li
+                    className="my-2 mr-8 dark:text-white cursor-pointer"
+                    onClick={() => setMemuOption(false)}
+                  >
+                    Portfolio
+                  </li>
+                </a>
+                <a href="#about">
+                  <li
+                    className="my-2 mr-8 dark:text-white cursor-pointer"
+                    onClick={() => setMemuOption(false)}
+                  >
+                    About
+                  </li>
+                </a>
 
-              <a href="#quotes">
-                <li
-                  className="my-2 mr-8 dark:text-white cursor-pointer"
-                  onClick={() => setMemuOption(false)}
-                >
-                  Quotes
-                </li>
-              </a>
+                <a href="#quotes">
+                  <li
+                    className="my-2 mr-8 dark:text-white cursor-pointer"
+                    onClick={() => setMemuOption(false)}
+                  >
+                    Quotes
+                  </li>
+                </a>
 
-              <a href="#skills">
-                <li
-                  className="my-2 mr-8 dark:text-white cursor-pointer"
-                  onClick={() => setMemuOption(false)}
-                >
-                  Skills
-                </li>
-              </a>
-              <a href="#projects2">
-                <li
-                  className="my-2 mr-8 dark:text-white cursor-pointer"
-                  onClick={() => setMemuOption(false)}
-                >
-                  Projects
-                </li>
-              </a>
+                <a href="#skills">
+                  <li
+                    className="my-2 mr-8 dark:text-white cursor-pointer"
+                    onClick={() => setMemuOption(false)}
+                  >
+                    Skills
+                  </li>
+                </a>
+                <a href="#projects2">
+                  <li
+                    className="my-2 mr-8 dark:text-white cursor-pointer"
+                    onClick={() => setMemuOption(false)}
+                  >
+                    Projects
+                  </li>
+                </a>
 
-              <a href="#contact">
-                <li
-                  className="my-2 mr-8 dark:text-white cursor-pointer"
-                  onClick={() => setMemuOption(false)}
-                >
-                  Contact ME
-                </li>
-              </a>
+                <a href="#contact">
+                  <li
+                    className="my-2 mr-8 dark:text-white cursor-pointer "
+                    onClick={() => setMemuOption(false)}
+                  >
+                    Contact ME
+                  </li>
+                </a>
 
-              <a href="MOMOH_ABDUL JABBAR_Resume.pdf">
-                <li
-                  className="my-2 mr-8 dark:text-white cursor-pointer "
-                  onClick={() => setMemuOption(false)}
-                >
-                  Download CV
-                </li>
-              </a>
-            </ul>
-          </nav>
+                <a href="MOMOH_ABDUL JABBAR_Resume.pdf">
+                  <li
+                    className="my-2 mr-8 dark:text-white cursor-pointer "
+                    onClick={() => setMemuOption(false)}
+                  >
+                    Download CV
+                  </li>
+                </a>
+              </ul>
+            </nav>
+            <div className="flex flex-col mt-10 space-y-4">
+              <span>
+                <SocialIcon
+                  url="https://www.youtube.com/@momohabduljabbar8469"
+                  fgColor="blue"
+                  bgColor="transparent"
+                  style={{ height: 45, width: 45 }}
+                />
+              </span>
+
+              <span>
+                <SocialIcon
+                  url="https://twitter.com/NIGERIAN_KING2?s=09"
+                  fgColor="blue"
+                  bgColor="transparent"
+                  style={{ height: 45, width: 45 }}
+                />
+              </span>
+              <span>
+                <SocialIcon
+                  url="https://www.linkedin.com/in/momoh-abdul-jabbar-183260161"
+                  fgColor="blue"
+                  bgColor="transparent"
+                  style={{ height: 45, width: 45 }}
+                />
+              </span>
+
+              <span>
+                <SocialIcon
+                  url="https://github.com/jabbarlee"
+                  fgColor="blue"
+                  bgColor="transparent"
+                  style={{ height: 45, width: 45 }}
+                />
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </motion.header>

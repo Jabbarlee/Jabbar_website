@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const AnimatedTextCharacterMobile = ({ text, text2 }) => {
+const AnimatedTextCharacterPhones = ({ text, text2 }) => {
   const letters = Array.from(text);
   const letters2 = Array.from(text2);
 
@@ -69,4 +69,4 @@ const AnimatedTextCharacterMobile = ({ text, text2 }) => {
   );
 };
 
-export default AnimatedTextCharacterMobile;
+export default AnimatedTextCharacterPhones;
