@@ -26,7 +26,7 @@ export default function Home() {
       : "bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-900 via-gray-100 to-gray-900";
   return (
     <div
-      className={` h-screen snap-y  snap-mandatory z-0 overflow-y-scroll  ${PageTheme}  overflow-x-hidden scrollbar md:scrollbar-track-gray-400/20 md:scrollbar-thumb-blue-800 bg-regal-blue  `}
+      className={` h-screen snap-y  snap-mandatory z-0 overflow-y-scroll  ${PageTheme} w-screen  overflow-x-hidden md:scrollbar md:scrollbar-track-gray-400/20 md:scrollbar-thumb-blue-800 bg-regal-blue  `}
     >
       <Head>
         <title>Jabbars Portfolio</title>

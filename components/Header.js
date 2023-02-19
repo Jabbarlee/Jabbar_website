@@ -107,7 +107,7 @@ export default function Header() {
       }}
       animate={{ x: 0, opacity: 1, scale: 1 }}
       transition={{ duration: 2, delay: 2 }}
-      className={`sticky top-0  ${mobileClickTriggers}   flex md:flex-row items-center justify-between   max-w-8xl mx-auto z-20  xl:items-center  md:h-14 2xl:h-20   h-10  `}
+      className={`sticky top-0  ${mobileClickTriggers}   flex md:flex-row items-center justify-between   max-w-8xl  z-20  xl:items-center  md:h-14 2xl:h-20   h-10  `}
     >
       {/* Social icons */}
 
