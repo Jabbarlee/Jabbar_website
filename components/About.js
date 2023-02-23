@@ -209,7 +209,7 @@ up coding . i have experience with web `}
             nothing on earth that is difficuit if you put your mind and effort
             into it." i have a high work ethic and i have worked on different
             projects. i am a fullstack developer who never accepts no as an
-            answer . i have acquired a number of
+            answer . i have acquired a number of ski-
           </motion.p>
 
           <motion.p
@@ -217,7 +217,7 @@ up coding . i have experience with web `}
             whileInView={{ y: 1, opacity: 1 }}
             transition={{ duration: 4, delay: 7 }}
           >
-            skills with my determination which includes, html, css,
+            lls with my determination which includes, html, css,
             javacript,tailwind css,framer-motion ,firebase,sanity ,next.js and
             so on. i am currently still improving and adding more skillset and
             learning Web 3 development.

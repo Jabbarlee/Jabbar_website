@@ -54,7 +54,7 @@ export default function Projects2() {
   console.log(projects.length, "Projects length");
 
   return (
-    <div className="h-screen  w-screen relative flex overflow-hidden flex-col text-left md:flex-row  justify-evenly mx-auto items-center z-0">
+    <div className="h-screen  w-screen relative flex overflow-hidden flex-col text-left md:flex-row  justify-evenly  items-center z-0">
       <h3 className="absolute 2xl:top-[150px] 2xl:tracking-[30px] 2xl:text-4xl  font-GoblineOne md:top-20 top-10 mb-4 uppercase tracking-[15px] text-blue-500 text-2xl">
         PROJECTS
       </h3>
@@ -104,7 +104,7 @@ export default function Projects2() {
             </Link>
 
             <motion.div
-              className="shadow-lg shadow-blue-800 hover:shadow-sm"
+              className="shadow-lg shadow-blue-800 hover:shadow-sm  2xl:text-2xl md:w-auto w-[230px]"
               initial={{ x: -200 }}
               whileInView={{ x: 1 }}
               transition={{
@@ -112,17 +112,15 @@ export default function Projects2() {
               }}
             >
               <Link href={`${project?.link}`}>
-                <p className="2xl:text-2xl md:w-auto w-[230px] ">
-                  {project?.writeUp}
-                </p>
+                <p>{project?.writeUp}</p>
               </Link>
-              <div className="flex md:hidden w-full justify-between">
+              <div className="flex md:hidden w-full  justify-between">
                 <ArrowLeftCircleIcon
-                  className="md:h-12 h-8 min-w-fit pr-4 mt-3  hover:w-10 hover:h-10 bg-blue-500 rounded-full  "
+                  className="md:h-12 h-8  pr-4 mt-3  hover:w-10 hover:h-10 bg-blue-500 rounded-full  "
                   onClick={PreviousProject}
                 />
                 <ArrowRightCircleIcon
-                  className="md:h-12 h-8 min-w-fit mt-3  pl-4 hover:w-10 hover:h-10  bg-blue-500 rounded-full  "
+                  className="md:h-12 h-8  mt-3  pl-4 hover:w-10 hover:h-10  bg-blue-500 rounded-full  "
                   onClick={NextProject}
                 />
               </div>
