@@ -100,15 +100,16 @@ export default function ContactMe() {
         theme="dark"
       />
 
-      <div className=" dark:bg-blue-300 min-[460px]:w-[500px] min-[680px]:w-[600px] bg-blue-900 bg-opacity-10 md:w-[1150px] w-[300px] h-[500px] dark:bg-opacity-10 md:h-[500px] md:mt-24 2xl:w-[1500px] 2xl:h-[600px]  backdrop-filter backdrop-blur-sm border  border-r-0 border-t-0 z-30  ">
+      <div className=" dark:bg-blue-300  bg-blue-900 bg-opacity-10 md:w-[1150px] w-[300px] h-[500px] dark:bg-opacity-10 md:h-[500px] md:mt-24 2xl:w-[1500px] 2xl:h-[600px]  backdrop-filter backdrop-blur-sm border  border-r-0 border-t-0 z-30  ">
         <form
           className="flex flex-col justify-evenly items-center h-full   "
           ref={form}
           onSubmit={sendEmail}
         >
-          <div className="text-blue-500 shadow-black shadow-lg  text-1xl tracking-[20px] 2xl:tracking-[30px] 2xl:text-2xl border-0 font-serif">
+          <div className="text-blue-500  shadow-black shadow-lg  text-1xl tracking-[15px] 2xl:tracking-[30px] 2xl:text-2xl border-0 font-serif">
             CONTACT ME
           </div>
+
           <input
             className="lg:w-[500px] w-[300px] text-center dark:text-white bg-transparent border-r-0 border-t-0 border-l-0 dark:border-white dark:border-opacity-50 2xl:text-xl   tracking-widest focus:bg-transparent"
             type="text"
@@ -117,13 +118,14 @@ export default function ContactMe() {
             onChange={(e) => setUsername(e.target.value)}
             placeholder="Enter Your Full Name"
           ></input>
+
           <input
             type="email"
             name="user_email"
             placeholder="Enter Your Email addeess"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="lg:w-[500px] w-[300px] text-center 2xl:text-xl dark:text-white bg-transparent border-r-0 border-t-0 border-l-0 darK:border-white dark:border-opacity-50   tracking-widest focus:outline-none focus:outline-transparent"
+            className="lg:w-[500px] w-[300px] text-center    2xl:text-xl dark:text-white bg-transparent border-r-0 border-t-0 border-l-0 darK:border-white dark:border-opacity-50   tracking-widest focus:outline-none "
           ></input>
 
           <textarea
@@ -131,7 +133,7 @@ export default function ContactMe() {
             name="message"
             value={textarea}
             onChange={(e) => setTextarea(e.target.value)}
-            className="focus:text-start lg:w-[500px] w-[300px] 2xl:text-xl text-center dark:text-white text-black bg-transparent border-r-0 border-t-0 border-l-0 dark:border-white dark:border-opacity-50   tracking-widest focus:outline-none focus:outline-transparent"
+            className="focus:text-start lg:w-[500px] w-[300px]  2xl:text-xl text-center dark:text-white text-black bg-transparent border-r-0 border-t-0 border-l-0 dark:border-white dark:border-opacity-50   tracking-widest focus:outline-none focus:outline-transparent"
           ></textarea>
           <div className="md:flex md:justify-between flex flex-col justify-center items-center dark:text-white md:w-[500px]  w-[350px] dark:text-opacity-50 ">
             <div className="flex ">

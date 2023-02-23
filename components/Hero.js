@@ -24,7 +24,7 @@ export default function Hero() {
       <BackgroundCircles />
 
       <motion.div
-        className="absolute z-0 top-96 md:left-4 -left-20  min-[500px]:left-6 min-[500px]:left-6 min-h-[1366px]:top-10 animate-spin-slow 2xl:hidden"
+        className="absolute z-0 top-96 md:left-4 -left-20  min-[500px]:left-6 min-h-[1366px]:top-10 animate-spin-slow 2xl:hidden"
         initial={{ y: -800, scale: 0.1 }}
         animate={{ y: 0, scale: 1 }}
         transition={{ delay: 0.5, duration: 2 }}

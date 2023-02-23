@@ -54,7 +54,7 @@ export default function Projects2() {
   console.log(projects.length, "Projects length");
 
   return (
-    <div className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0">
+    <div className="h-screen  w-screen relative flex overflow-hidden flex-col text-left md:flex-row  justify-evenly mx-auto items-center z-0">
       <h3 className="absolute 2xl:top-[150px] 2xl:tracking-[30px] 2xl:text-4xl  font-GoblineOne md:top-20 top-10 mb-4 uppercase tracking-[15px] text-blue-500 text-2xl">
         PROJECTS
       </h3>

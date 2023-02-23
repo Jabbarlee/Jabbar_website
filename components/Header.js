@@ -49,6 +49,19 @@ export default function Header() {
 
   const [mounted, setMounted] = useState(false);
   const [menuOption, setMemuOption] = useState(false);
+
+  const [Mrvisible, setMrvisible] = useState("");
+
+  useEffect(() => {
+    if (!menuOption) {
+      setTimeout(() => {
+        setMrvisible("invisible");
+      }, 500);
+    } else if (menuOption) {
+      setMrvisible("");
+    }
+  }, [menuOption]);
+
   useEffect(() => {
     setMounted(true);
 
@@ -156,13 +169,15 @@ export default function Header() {
       <div className="md:flex md:block hidden  md:flex-row md:items-center  cursor-pointer mr-6 ">
         {renderThemeChanger()}
 
-        <motion.p
-          className="uppercase  hidden md:inline-flex  text-blue-700 text-md  mr-4"
-          variants={buttonVariants}
-          whileHover="hover"
-        >
-          CONTACT ME
-        </motion.p>
+        <a href="#contact">
+          <motion.p
+            className="uppercase  hidden md:inline-flex  text-blue-700 text-md  mr-4"
+            variants={buttonVariants}
+            whileHover="hover"
+          >
+            CONTACT ME
+          </motion.p>
+        </a>
       </div>
 
       <div className="flex md:hidden  flex-row items-center  cursor-pointer ml-4  ">
@@ -192,9 +207,11 @@ export default function Header() {
         ></span>
       </div>
 
-      <div className=" md:hidden absolute top-0 right-0 w-48 h-96 overflow-hidden ">
+      <div
+        className={`md:hidden absolute ${Mrvisible}  top-0 right-0 w-48 h-96 overflow-hidden `}
+      >
         <div
-          className={`abolute ${translateItem} flex flex-col justify-between w-48 h-96 transition duration-700 border-t-0 border-l-0 dark:bg-black bg-gray-400 font-GoblineOne border border-white opacity-80 -right-100`}
+          className={`absolute ${translateItem}   flex flex-col justify-between w-48 h-96 transition duration-700 border-t-0 border-l-0 dark:bg-black bg-gray-400 font-GoblineOne border border-white opacity-80 -right-100`}
         >
           <div className="flex">
             <nav className="self-center ">
