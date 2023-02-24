@@ -60,8 +60,8 @@ export default function Projects2() {
       </h3>
 
       <div className="relative w-full flex  overflow-y-hidden md:pt-28 ">
-        <div className="w-screen  flex-shrink-0 snap-start flex flex-col space-y-5 items-center text-black dark:text-white justify-center p-20 md:p-44 h-screen  ">
-          <div className="pl-10 pr-10  flex justify-evenly   items-center  ">
+        <div className="w-screen  flex-shrink-0 snap-start flex flex-col space-y-1 items-center text-black dark:text-white mt-[100px]  md:p-44 h-screen  ">
+          <div className="   flex justify-evenly   items-center  ">
             <div className="h-[180px] w-screen mt-10  flex justify-center md:hidden ">
               <Link href={`${project?.link}`}>
                 <motion.img

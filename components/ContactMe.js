@@ -84,7 +84,7 @@ export default function ContactMe() {
   };
   return (
     <div
-      className={`h-screen ${ContactTheme}  bg-white flex relative text-center md:text-left md:flex-row w-screen px-10 justify-evenly mx-auto items-center z-0 `}
+      className={`h-screen ${ContactTheme}  bg-white flex relative text-center md:text-left md:flex-row w-screen  justify-center  items-center z-0 `}
     >
       <ToastContainer
         className="absoute md:mt-10 mt-20 mr-20 md:mr-16 2xl:mt-[150px] "
@@ -100,7 +100,7 @@ export default function ContactMe() {
         theme="dark"
       />
 
-      <div className=" dark:bg-blue-300  bg-blue-900 bg-opacity-10 md:w-[1150px] w-[300px] h-[500px] dark:bg-opacity-10 md:h-[500px] md:mt-24 2xl:w-[1500px] 2xl:h-[600px]  backdrop-filter backdrop-blur-sm border  border-r-0 border-t-0 z-30  ">
+      <div className=" dark:bg-blue-300   bg-blue-900 bg-opacity-10 md:w-[1150px] w-[280px] h-[450px] dark:bg-opacity-10 md:h-[500px] md:mt-24 2xl:w-[1500px] 2xl:h-[600px]  backdrop-filter backdrop-blur-sm border  border-r-0 border-t-0 z-30  ">
         <form
           className="flex flex-col justify-evenly items-center h-full   "
           ref={form}
@@ -142,7 +142,7 @@ export default function ContactMe() {
             </div>
             <div className="flex ">
               <EnvelopeIcon className="w-4 mr-1 2xl:text-2xl h-42xl:text-xl rounded-full dark:text-white" />
-              <h1 className="2xl:text-xl">momohabduljabbar@gmail.com</h1>
+              <h1 className="2xl:text-xl ">momohabduljabbar@gmail.com</h1>
             </div>
           </div>
           <motion.input
