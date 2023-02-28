@@ -72,8 +72,8 @@ export default function About() {
         <AnimatedTextCharacter2xl
           text={`I am Abdul Jabbar, i am a Software engineer but mostly called a
 software wizard by my friends `}
-          text2={`because of how Fast i was able to pick
-up coding . i have experience with web devlopment . `}
+          text2={`because of how fast i was able to pick
+up coding . i have experience with web development . `}
         />
 
         <motion.p
@@ -82,9 +82,9 @@ up coding . i have experience with web devlopment . `}
           transition={{ duration: 5, delay: 3 }}
         >
           my principle in life is "There is nothing on earth that is difficuit
-          if you put your mind and effort into it." i have a high work ethic and
-          i have worked on different projects. i am a fullstack developer who
-          never accepts no as an answer . i have acquired a number of skills
+          if you put your mind and effort into it." I have a high work ethic and
+          I have worked on different projects. I am a fullstack developer who
+          never accepts no as an answer . I have acquired a number of skills
           with my
         </motion.p>
 
@@ -94,17 +94,18 @@ up coding . i have experience with web devlopment . `}
           transition={{ duration: 4, delay: 6 }}
         >
           determination which includes, html, css, javacript,tailwind
-          css,framer-motion ,firebase,sanity ,next.js and so on. i am currently
+          css,framer-motion ,firebase,sanity ,next.js and so on. I am currently
           still improving and adding more skillset and learning Web 3
+          development
         </motion.p>
       </div>
 
       <div className="dark:text-white hidden 2xl:hidden lg:block md:hidden text-black text-justify  md:px-10">
         <AnimatedTextCharacter
-          text={`I am Abdul Jabbar, i am a Software engineer but mostly called a
+          text={`I am Abdul Jabbar, I am a Software engineer but mostly called a
 software wizard by my friends because of how`}
-          text2={`Fast i was able to pick
-up coding . i have experience with web devlopment . my principle in
+          text2={`fast i was able to pick
+up coding . I have experience with web development . my principle in
 life is "There is `}
         />
 
@@ -114,9 +115,9 @@ life is "There is `}
           transition={{ duration: 5, delay: 3 }}
         >
           nothing on earth that is difficuit if you put your mind and effort
-          into it." i have a high work ethic and i have worked on different
-          projects. i am a fullstack developer who never accepts no as an answer
-          . i have acquired a
+          into it." I have a high work ethic and I have worked on different
+          projects. I am a fullstack developer who never accepts no as an answer
+          . I have acquired a
         </motion.p>
 
         <motion.p
@@ -126,8 +127,8 @@ life is "There is `}
         >
           number of skills with my determination which includes, html, css,
           javacript,tailwind css,framer-motion ,firebase,sanity ,next.js and so
-          on. i am currently still improving and adding more skillset and
-          learning Web 3
+          on. I am currently still improving and adding more skillset and
+          learning Web 3 development
         </motion.p>
       </div>
 
@@ -135,8 +136,8 @@ life is "There is `}
         <AnimatedTextCharacterIpad
           text={`I am Abdul Jabbar, i am a Software engineer but mostly called a
 software wizard by my `}
-          text2={`friends because of how Fast i was able to pick
-up coding . i have experience with web `}
+          text2={`friends because of how fast i was able to pick
+up coding . I have experience with web `}
         />
 
         <motion.p
@@ -144,10 +145,10 @@ up coding . i have experience with web `}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 5, delay: 3 }}
         >
-          devlopment . my principle in life is "There is nothing on earth that
-          is difficuit if you put your mind and effort into it." i have a high
-          work ethic and i have worked on different projects. i am a fullstack
-          developer who never accepts no as an answer . i have acquired
+          development .My principle in life is "There is nothing on earth that
+          is difficuit if you put your mind and effort into it." I have a high
+          work ethic and I have worked on different projects. I am a fullstack
+          developer who never accepts no as an answer . I have acquired
         </motion.p>
 
         <motion.p
@@ -157,8 +158,8 @@ up coding . i have experience with web `}
         >
           a number of skills with my determination which includes, html, css,
           javacript,tailwind css,framer-motion ,firebase,sanity ,next.js and so
-          on. i am currently still improving and adding more skillset and
-          learning Web 3
+          on. I am currently still improving and adding more skillset and
+          learning Web 3 development
         </motion.p>
       </div>
       {!showing && (
@@ -172,11 +173,11 @@ up coding . i have experience with web `}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 5, delay: 3 }}
           >
-            of how fast i was able to pick up coding . i have experience with
-            web devlopment . my principle in life is "There is nothing on earth
-            that is difficuit if you put your mind and effort into it." i have a
-            high work ethic and i have worked on different projects. i am a
-            fullstack developer who never accepts no as an answer . i have
+            of how fast i was able to pick up coding . I have experience with
+            web development . My principle in life is "There is nothing on earth
+            that is difficuit if you put your mind and effort into it." I have a
+            high work ethic and i have worked on different projects. I am a
+            fullstack developer who never accepts no as an answer . I have
             acquired a number of skills with my
           </motion.p>
 
@@ -186,7 +187,7 @@ up coding . i have experience with web `}
             transition={{ duration: 4, delay: 7 }}
           >
             determination which includes, html, css, javacript,tailwind
-            css,framer-motion ,firebase,sanity ,next.js and so on. i am
+            css,framer-motion ,firebase,sanity ,next.js and so on. I am
             currently still improving and adding more skillset and learning Web
             3 development.
           </motion.p>
@@ -204,12 +205,12 @@ up coding . i have experience with web `}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 5, delay: 3 }}
           >
-            my friends because of how fast i was able to pick up coding . i have
-            experience with web devlopment . my principle in life is "There is
+            my friends because of how fast i was able to pick up coding . I have
+            experience with web development . My principle in life is "There is
             nothing on earth that is difficuit if you put your mind and effort
-            into it." i have a high work ethic and i have worked on different
-            projects. i am a fullstack developer who never accepts no as an
-            answer . i have acquired a number of ski-
+            into it." I have a high work ethic and i have worked on different
+            projects. I am a fullstack developer who never accepts no as an
+            answer . I have acquired a number of ski-
           </motion.p>
 
           <motion.p
@@ -219,7 +220,7 @@ up coding . i have experience with web `}
           >
             lls with my determination which includes, html, css,
             javacript,tailwind css,framer-motion ,firebase,sanity ,next.js and
-            so on. i am currently still improving and adding more skillset and
+            so on. I am currently still improving and adding more skillset and
             learning Web 3 development.
           </motion.p>
         </div>
